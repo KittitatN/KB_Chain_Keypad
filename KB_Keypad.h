@@ -2,7 +2,7 @@
 #include "Wire.h"
 
 
-#define I2C_default_addr 0x20
+#define I2C_default_addr 0x20 //
 typedef enum {
   PRESS,
   RELEASE,
