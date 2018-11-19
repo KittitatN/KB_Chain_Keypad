@@ -16,7 +16,7 @@ class KB_Chain_4x4_Keypad
   public:
     
     void on(KEYPAD_EVENT event, KeypadEventCallback callback) ;
-    char scanKey();
+    void scanKey();
     void begin(uint8_t _addr = I2C_default_addr);
 
 
