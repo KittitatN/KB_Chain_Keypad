@@ -21,7 +21,7 @@ void KB_Chain_4x4_Keypad::begin(uint8_t _addr)
 
 
 
-char KB_Chain_4x4_Keypad::scanKey() {
+void KB_Chain_4x4_Keypad::scanKey() {
   uint8_t row = 0, col = 0;
   if (millis() - first_time >= interval) {
     Wire.beginTransmission(addr);
